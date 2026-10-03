@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stratasearch"
+version = "0.1.0"
+description = "Inspectable staged document retrieval with an offline lexical runtime and optional real provider adapters"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+providers = ["openai>=2.36,<3", "voyageai>=0.3.7,<0.4", "turbopuffer>=1.21,<2"]
+dev = ["pytest>=9,<10", "ruff>=0.16,<0.17"]
+
+[project.scripts]
+stratasearch = "stratasearch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stratasearch*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

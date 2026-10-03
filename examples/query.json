@@ -1,0 +1,11 @@
+{
+  "query_id": "synthetic-cache-search",
+  "description": "search latency cache",
+  "hard_criteria": ["cache"],
+  "soft_criteria": ["latency"],
+  "filters": [
+    {"field":"year","op":"Gte","value":2025},
+    {"field":"kind","op":"Eq","value":"guide"},
+    {"field":"collection","op":"Eq","value":"core"}
+  ]
+}
