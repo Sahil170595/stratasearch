@@ -11,8 +11,10 @@ configured and authorized. Those adapters were tested with injected clients, not
 live services.
 
 [Portfolio](https://chimeraforge.vercel.app/work) |
-[Interactive demo and write-up PR #65](https://github.com/Sahil170595/Banterblogs/pull/65)
-(pending merge at source publication; publication does not imply deployment).
+[Browser demo](https://chimeraforge.vercel.app/projects/systems/staged-search):
+a TypeScript port of the offline pipeline on this repository's example, checked
+against the CLI's output, which runs the query at every relaxation threshold. It
+has no provider adapters.
 
 ## Run Without Providers
 
